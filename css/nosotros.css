@@ -1,0 +1,85 @@
+/*nosotros*/
+.container_nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "perfil_foto descripcion descripcion"
+      "perfil_foto descripcion descripcion"
+      "perfil_foto descripcion descripcion";
+      width: 100%;
+      background: linear-gradient(110deg, #d8d4c9 60%, #ffffff 60%);
+      height: 500px;
+  }
+  
+  .perfil_foto { 
+      grid-area: perfil_foto; 
+      background-image: url('../img/perfil.JPG');
+      background-size: cover; 
+
+ }
+
+ .perfil_foto:hover {
+     transform: scale(1.1);
+ }
+ 
+  
+  .descripcion { 
+      grid-area: descripcion; 
+      
+      padding: 20px;
+    }
+
+    .nombre {
+        padding: 20px;
+        margin-left: 25px;
+    }
+
+    .descripcion_parrafo {
+        font-weight: bold;
+        font-style: italic;
+    }
+  
+    .promocional {
+        object-fit: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .imagen-promocional {
+        margin: 20px 20px
+    }
+.esperamos {
+    position: absolute;
+    font-family: fantasy;
+    color: darkkhaki;
+    font-size: xxx-large;
+    stroke: blueviolet;
+    font-style: italic;
+    margin-left: 500px;
+    margin-top: 300px;
+}
+   .btn {
+        position: absolute;
+        margin-top: 400px;
+        margin-left: 570px; 
+    }
+
+    .card {
+        width: 800px;
+        margin:auto;
+        margin-bottom: 20px;
+    }
+    .card {
+        background-color: #ffffff;
+    }
+
+    .card-img-top {
+        height: 300px;
+    }
+    .card-text {
+        font-size: large;
+    }
